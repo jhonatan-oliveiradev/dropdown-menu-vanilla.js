@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown Menu with HTML, CSS & Vanilla JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="userBx">
+        <div class="imgBx">
+          <img src="user.jpg" alt="user avatar" />
+        </div>
+        <p class="username">Yoon Ji-Woo</p>
+      </div>
+      <div class="menuToggle"></div>
+      <ul class="menu">
+        <li>
+          <a href="#"><ion-icon name="person-outline"></ion-icon>Meu Perfil</a>
+        </li>
+        <li>
+          <a href="#"
+            ><ion-icon name="chatbubble-outline"></ion-icon>Mensagens</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><ion-icon name="notifications-outline"></ion-icon>Notificações</a
+          >
+        </li>
+        <li>
+          <a href="#"><ion-icon name="settings-outline"></ion-icon>Opções</a>
+        </li>
+        <li>
+          <a href="#"
+            ><ion-icon name="help-outline"></ion-icon>Ajuda & Suporte</a
+          >
+        </li>
+        <li>
+          <a href="#"><ion-icon name="log-out-outline"></ion-icon>Sair</a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+      let menuToggle = document.querySelector(".menuToggle");
+      let navigation = document.querySelector(".navigation");
+      menuToggle.onclick = function () {
+        navigation.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
